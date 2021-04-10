@@ -1,0 +1,30 @@
+{
+  "name": "cameradb",
+  "version": "1.0.0",
+  "description": "Camera searching DB",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "server": "node server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relysia/cameraDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Relysia/cameraDB/issues"
+  },
+  "homepage": "https://github.com/Relysia/cameraDB#readme",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "nodemon": "^2.0.7",
+    "x-frame-options": "^1.0.0"
+  }
+}
